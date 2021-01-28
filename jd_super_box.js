@@ -35,8 +35,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '', message;
 const randomCount = $.isNode() ? 20 : 5;
 
-const inviteCodes = [
-  ``
+const inviteCodes = [`0xg4iIqEF9ea67o1BnHXzw`,`zn_VxndvQ--8_UvtwlMYvg`,`jZQ55GvrMC-P2RgPZ8g9wA`,`-e7UnmIDrPi_Ijjc7EZpPg`,`vYcTnzsBVorosDxe-X1GCQ`,`-gFTGM1AzP6iOVgfcuuVsA`,`3nruMwylc5w_wgOmF9AYKQ`,`N_BV5buMc69-BSCZxfU8Bi7vf9_h1OwXcK79dCGGr5c`,`RE1fvTuX9GeAkAaRClNgSg`,`mYVHkc7r-1uyIPnndVohYw`
 ];
 
 if ($.isNode()) {
