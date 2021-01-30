@@ -3,7 +3,7 @@
 更新地址：https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_help.js
 更新时间：2021-1-21
 活动入口：京东APP我的-更多工具-宠汪汪
-目前提供了304位好友的friendPin供使用。脚本随机从里面获取一个，助力成功后，退出小程序重新点击进去开始助力新的好友
+目前提供了30309位好友的friendPin供使用。脚本随机从里面获取一个，助力成功后，退出小程序重新点击进去开始助力新的好友
 欢迎大家使用 https://jdjoy.jd.com/pet/getFriends?itemsPerPage=20&currentPage=1 (currentPage=1表示第一页好友，=2表示第二页好友)
 提供各自账号列表的friendPin给我
 如果想设置固定好友，那下载下来放到本地使用，可以修改friendPin换好友(助力一好友后，更换一次friendPin里面的内容)
@@ -33,7 +33,9 @@ http-request ^https:\/\/draw\.jdfcloud\.com\/\/pet\/enterRoom\/h5\?invitePin=.*(
 https://jdjoy.jd.com/pet/getFriends?itemsPerPage=20&currentPage=1
 */
 let url = $request.url
+
 const friendsArr = [""]
+
 /**
  * 生成随机数字
  * @param {number} min 最小值（包含）
