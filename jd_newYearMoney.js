@@ -48,11 +48,7 @@ if ($.isNode()) {
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const inviteCodes = [
-
-
   ``
-
-
 ];
 !(async () => {
   await requireConfig();
@@ -154,7 +150,7 @@ async function helpFriends() {
     if (!code) continue
     await helpFriend(code)
     if (!$.canHelp) return
-    await $.wait(3000)
+    await $.wait(4000)
   }
 }
 
