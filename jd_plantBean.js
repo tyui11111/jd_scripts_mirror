@@ -38,6 +38,7 @@ let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好�
   '',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
   '',
+
 ]
 let currentRoundId = null;//本期活动id
 let lastRoundId = null;//上期id
