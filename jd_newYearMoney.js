@@ -52,7 +52,6 @@ const inviteCodes = [
 
   ``
 
-
 ];
 !(async () => {
   await requireConfig();
