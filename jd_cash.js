@@ -30,7 +30,9 @@ let helpAuthor = true;
 const randomCount = $.isNode() ? 20 : 5;
 const inviteCodes = [
 
+
   ``
+
 
 ]
 if ($.isNode()) {
