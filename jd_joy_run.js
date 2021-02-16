@@ -43,8 +43,10 @@ let invite_pins = [""];
 //下面给出好友赛跑助力的示例填写规则
 let run_pins = [""];
 let temp = run_pins[0].split(',')
+
 let fixPins = temp.splice(temp.indexOf(''), 1);
 fixPins.push(...temp.splice(temp.indexOf(''), 1));
+
 const randomPins = getRandomArrayElements(temp, 4);
 temp = [...fixPins, ...randomPins];
 run_pins = [temp.join(',')];
@@ -126,7 +128,7 @@ async function getToken() {
       count ++;
       console.log(`count: ${count}`)
       $.setdata(`${count}`, 'countFlag');
-      if ($.getdata('countFlag') * 1 === 2) {
+      if ($.getdata('countFlag') * 1 >= 2) {
         count = 0;
         $.setdata(`${count}`, 'countFlag');
         $.msg($.name, '更新Token: 成功🎉', ``);
